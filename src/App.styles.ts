@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Map = styled.div`
     width: 480px;
     height: 480px;
-    background-image: url('/assets/map.png');
+    background-image: url('./assets/map.png');
     background-position: left top;
     background-size: 100%;
     position: relative;
@@ -24,7 +24,7 @@ export const ExitLvl1 = styled.div`
     left: 39%;
     width: 106px;
     height: 23px;
-    background-image: url('assets/exit_lvl-1.png');
+    background-image: url('./assets/exit_lvl-1.png');
     background-size: 100%;
     background-position:center;
 `;
@@ -123,7 +123,7 @@ export const NameArea = styled.form`
 `;
 
 export const TalkImage = styled.img.attrs(props => ({
-    src: `assets/talk_${props.alt === 'spriteLeft' ? 'left' : 'right'}-char.png`
+    src: `./assets/talk_${props.alt === 'spriteLeft' ? 'left' : 'right'}-char.png`
 }))`
     height: 60px;
     float: ${props => props.alt === 'spriteLeft' ? 'left' : 'right'};

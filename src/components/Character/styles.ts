@@ -6,7 +6,7 @@ export const Container = styled.div<{ size: number, left: number, top: number, s
     position: relative;
     left: ${props => props.left}px;
     top: ${props => props.top}px;
-    background-image: url('/assets/char.png');
+    background-image: url('./assets/char.png');
     background-position: 0px ${props => props.sidePos}px;
     cursor: ${props => props.left === (14 * 30) && props.top === 30 ? 'pointer': ''};
 `;
